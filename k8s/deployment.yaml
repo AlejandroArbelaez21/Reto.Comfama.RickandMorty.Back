@@ -1,0 +1,36 @@
+---
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: comfama-archetype-api
+  namespace: ${BRANCH_NAME}
+  labels:
+    app: comfama-archetype-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: comfama-archetype-api
+  template:
+    metadata:
+      name: comfama-archetype-api
+      labels:
+        app: comfama-archetype-api
+        jenkinsBuildId: ${BUILD_NUMBER}
+    spec:
+      containers:
+      - name: comfama-archetype-api
+        image: ${REGISTRY_URL}${IMAGE_TAG}
+        resources: {}
+        imagePullPolicy: Always
+        env:
+        - name: API_KEY_ALMA
+          valueFrom:
+            configMapKeyRef:
+              name: comfama-config
+              key: biblioteca.api.key.alma
+      restartPolicy: Always
+      dnsPolicy: ClusterFirst
+      securityContext: {}
+  strategy:
+    type: Recreate
