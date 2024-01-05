@@ -1,10 +1,10 @@
-package com.comfama.api.archetype.util;
+package com.comfama.reto.api.util;
 
 /**
  * Clase que contiene los valores constantes usados transversalmente en la
  * aplicacion
  * 
- * @author felipe.olis
+ * @author eduardarbelaez@comfama.com.co
  *
  */
 public class ArchetypeUtil {

@@ -10,14 +10,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class ArchetypeMicroserviceApplication {
+public class RetoMicroserviceApplication {
 
 	/**
 	 * Metodo encargado de ejecutar la aplicacion Spring boot
 	 * 
 	 * @param args
 	 */
+
 	public static void main(String[] args) {
-		SpringApplication.run(ArchetypeMicroserviceApplication.class, args);
+		SpringApplication.run(RetoMicroserviceApplication.class, args);
 	}
 }

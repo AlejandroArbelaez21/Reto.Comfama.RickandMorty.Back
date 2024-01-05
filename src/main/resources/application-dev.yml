@@ -1,24 +1,28 @@
 spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   application:
-    name: archetype-api
+    name: comfama-reto-api
   h2:
     console:
       enabled: true
       settings:
         web-allow-others: true
   datasource:
-    name: archetype-microservice
-    url: jdbc:h2:file:./build/h2db/db/archetype-microservice;DB_CLOSE_DELAY=-1
-  rabbitmq:
-    host: localhost
-    port: 5672
-    connection-timeout: 6000
-
+    name: comfama-reto-api
+    initialization-mode: always
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://dbcomfamadigitaldev.csfppvl3wg8f.us-east-1.rds.amazonaws.com/RetoComfama?serverTimezone=America/Bogota
+    username: admin
+    password: e~-}+T=3tc
 server:
-  port: 7000
+  port: 8080
   servlet:
-    context-path: /archetype
+    context-path: /
 logging:
   level:
     com.comfama: DEBUG
-archetype:
+reto:

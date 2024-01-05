@@ -9,7 +9,7 @@ package com.comfama.reto.api.exception;
  * @version 1.0
  * 
  */
-public class ArchetypeException extends Exception {
+public class RetoException extends Exception {
 
 	/** Serialize */
 	private static final long serialVersionUID = 6365652257268547172L;
@@ -23,7 +23,7 @@ public class ArchetypeException extends Exception {
 	/**
 	 * Metodo constructor
 	 */
-	public ArchetypeException(String developerMessage, String userMessage, int status, Throwable e) {
+	public RetoException(String developerMessage, String userMessage, int status, Throwable e) {
 		super(developerMessage, e);
 		this.userMessage = userMessage;
 		this.status = status;
@@ -32,7 +32,7 @@ public class ArchetypeException extends Exception {
 	/**
 	 * Metodo constructor
 	 */
-	public ArchetypeException(String developerMessage, String userMessage, int status) {
+	public RetoException(String developerMessage, String userMessage, int status) {
 		super(developerMessage);
 		this.userMessage = userMessage;
 		this.status = status;
@@ -41,7 +41,7 @@ public class ArchetypeException extends Exception {
 	/**
 	 * Metodo constructor
 	 */
-	public ArchetypeException(String userMessage, int status, Throwable e) {
+	public RetoException(String userMessage, int status, Throwable e) {
 		super(e);
 		this.userMessage = userMessage;
 		this.status = status;

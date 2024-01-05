@@ -1,24 +1,16 @@
 spring:
   application:
-    name: archetype-api
+    name: comfama-reto-api
   h2:
     console:
       enabled: true
       settings:
         web-allow-others: true
-  datasource:
-    name: archetype-microservice
-    url: jdbc:h2:file:./build/h2db/db/archetype-microservice;DB_CLOSE_DELAY=-1
-  rabbitmq:
-    host: localhost
-    port: 5672
-    connection-timeout: 6000
-
 server:
-  port: 7000
+  port: 8080
   servlet:
-    context-path: /archetype
+    context-path: /
 logging:
   level:
     com.comfama: DEBUG
-archetype:
+reto:

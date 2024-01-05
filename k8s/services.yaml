@@ -2,13 +2,13 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: comfama-archetype-api
+  name: comfama-reto-api
   namespace: master
   labels:
-    app: comfama-archetype-api
+    app: comfama-reto-api
 spec:
   selector:
-    app: comfama-archetype-api
+    app: comfama-reto-api
   type: ClusterIP
   ports:
   - name: http

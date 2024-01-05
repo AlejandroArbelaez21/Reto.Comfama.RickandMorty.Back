@@ -1,18 +1,18 @@
-package com.comfama.api.archetype.domain;
+package com.comfama.reto.api.domain;
 
 /**
  * Clase que define un DTO generico para las respuestas de las peticiones a los
  * servicios Rest. Este encapsula el resultado del consumo de las Apis y le
  * adiciona atributos de control
  * 
- * @author felipe.olis@pragma.com.co
+ * @author alejandro.arbelaez
  *
  * @param <T> Objeto de respuesta para las transacciones realizadas en cada Api
  * 
  * @version 1.0
  * 
  */
-public class Response<T> {
+public class ErrorResponse<T> {
 
 	/** Indica el estado de la transaccion */
 	private int status;
