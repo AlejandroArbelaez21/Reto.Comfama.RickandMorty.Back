@@ -21,6 +21,7 @@ build/
 *.iws
 *.iml
 *.ipr
+*.yml
 out/
 
 ### NetBeans ###
@@ -32,3 +33,5 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
