@@ -1,10 +1,10 @@
-package com.comfama.api.archetype.exception;
+package com.comfama.reto.api.exception;
 
 /**
  * Excepcion personalizada de ejemplo para el arquetipo de los microservicios.
  * Permite controlar definir excepciones propias de la aplicacion.
  * 
- * @author felipe.olis@pragma.com.co
+ * @author eduardarbelaez@comfama.com.co
  *
  * @version 1.0
  * 

@@ -1,16 +1,16 @@
-package com.comfama.api.archetype.business;
+package com.comfama.reto.api.business;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.comfama.api.archetype.repository.ProductRepository;
+import com.comfama.reto.api.repository.CharacterRepository;
 import com.google.gson.Gson;
 
 /**
  * Clase a implementar la logica
  * 
- * @author felipe.olis
+ * @author alejandro.arbelaez
  *
  */
 @Service
@@ -23,12 +23,12 @@ public class ArchetypeBusinessImpl implements ArchetypeBusiness {
 	private final Gson gson;
 
 	/** Objeto para realizar operaciones CRUD sobre la entidad Product */
-	private ProductRepository productRepository;
+	private CharacterRepository productRepository;
 
 	/**
 	 * Metodo constructor
 	 */
-	public ArchetypeBusinessImpl(ProductRepository productRepository) {
+	public ArchetypeBusinessImpl(CharacterRepository productRepository) {
 		this.productRepository = productRepository;
 		this.gson = new Gson();
 	}

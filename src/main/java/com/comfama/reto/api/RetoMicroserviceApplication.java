@@ -1,4 +1,4 @@
-package com.comfama.api.archetype;
+package com.comfama.reto.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Clase principal de la aplicacion. Permite ejecutar el proyecto.
  * 
- * @author felipe.olis
+ * @author alejandro.arbelaez
  *
  */
 @SpringBootApplication

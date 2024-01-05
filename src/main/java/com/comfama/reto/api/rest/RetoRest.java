@@ -1,4 +1,4 @@
-package com.comfama.api.archetype.rest;
+package com.comfama.reto.api.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.comfama.api.archetype.business.ArchetypeBusiness;
-import com.comfama.api.archetype.domain.Response;
+import com.comfama.reto.api.business.RetoBusiness;
+import com.comfama.reto.api.domain.Response;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -23,10 +23,10 @@ import io.swagger.annotations.Tag;
 @SwaggerDefinition(tags = { @Tag(name = "general", description = "RestController para el arquetipo") })
 public class ArchetypeRest {
 
-    private final ArchetypeBusiness productBusiness;
+    private final RetoBusiness productBusiness;
 
     @Autowired
-    public ArchetypeRest(ArchetypeBusiness productBusiness) {
+    public ArchetypeRest(RetoBusiness productBusiness) {
         super();
         this.productBusiness = productBusiness;
     }
